@@ -5,12 +5,7 @@
 <div class="container">
     <form action="">
         <div class="mb-3">
-            <label for = "searchDestino" class = "form-label">
-                Ingresa aqui tu destino:
-            </label>
-            <input type="text" class="form-control" name="searchDestino"/>
-        </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+            <textarea placeholder="Pon las caracteristicas que necesitas para tu ruta aqui" rows="4" cols="100" ></textarea
     </form>
 
     <p>Searching for: {{ searchTerm }}</p>
@@ -21,6 +16,8 @@
                 <img class="card-img-top" src="{{ destino.image.url }}" />
                 <div class="card-body">
                     <h5 class = "card-title fw-bold"> {{ destino.name }}</h5>
+
+                    
                     <p class="card-text">{{ destino.description}}</p>
                 </div>
             </div>
