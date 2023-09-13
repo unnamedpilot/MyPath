@@ -17,13 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from destino import views as vistaDestino
+from . import views
 
 from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',vistaDestino.home)
+    path('',vistaDestino.home),
+    path('api/chat-gpt/', views.chat_gpt_api, name='chat_gpt_api'),
 ]
 
 
