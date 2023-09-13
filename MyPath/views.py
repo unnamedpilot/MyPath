@@ -2,7 +2,7 @@ import openai
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponseBadRequest
 
-openai.api_key = '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'
+openai.api_key = ''
 
 def get_completion(messages, model="gpt-3.5-turbo"):
     response = openai.ChatCompletion.create(
