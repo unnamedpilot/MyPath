@@ -2,7 +2,7 @@ import openai
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponseBadRequest
 
-openai.api_key = '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'
+openai.api_key = ''
 
 def get_completion(messages, model="gpt-3.5-turbo"):
     response = openai.ChatCompletion.create(
@@ -25,7 +25,7 @@ def chat_gpt_api(request):
             ciudad = lineas[0].strip()
         if len(lineas) >= 2:
             intereses = lineas[1].strip()
-        if len(lineas) >= 3:
+        if len(lineas) >= 3:    
             cantidad_personas = lineas[2].strip()
 
         intereseUsuario=""
