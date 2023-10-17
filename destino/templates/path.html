@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Respuesta de ChatGPT</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -121,12 +125,38 @@
         <textarea id="comentario" placeholder="Deja tu comentario..."></textarea>
 
         <button onclick="agradecer()">Enviar Calificación</button>
+        <button onclick="downloadPDF()">Descargar PDF</button>
+
     </div>
 
     <script>
         function agradecer() {
             document.getElementById('agradecimiento').style.display = 'block';
         }
+
+        function downloadPDF() {
+            const respuesta = document.querySelector('.container p').textContent;
+            const pdf = new jsPDF();
+            pdf.text(20, 20, 'Tu Ruta:');
+            // Divide el texto en segmentos para asegurarse de que se ajuste adecuadamente en cada página
+            const margin = 10;
+            const pageHeight = pdf.internal.pageSize.height;
+            const textLines = pdf.splitTextToSize(respuesta, pdf.internal.pageSize.width - margin * 2);
+            let y = 30;
+
+            for (let i = 0; i < textLines.length; i++) {
+                if (y + 10 > pageHeight) {
+                    pdf.addPage();
+                    y = 20;
+                }
+                pdf.text(margin, y, textLines[i]);
+                y += 10;
+            }
+
+
+            pdf.save('TuRuta_mypath.pdf');
+        }      
+
     </script>
 </body>
 </html>
