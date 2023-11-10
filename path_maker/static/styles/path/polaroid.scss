@@ -1,0 +1,68 @@
+$photoColor: white;
+$borderColor: inherit;
+
+.stack__image {
+	display: block;
+    height: 100%;
+    margin-left: -50px;	
+}
+
+.stack {
+	width: 85%;
+	max-width: 400px;
+	transition: .25s ease;
+	&:hover {			
+		transform: rotate(5deg);
+		.card:before {
+			transform: translatey(-2%) rotate(-4deg);
+		}	
+		.card:after {
+			transform: translatey(2%) rotate(4deg);
+		}
+	}
+}
+
+.stack__card {
+    //box-shadow: 0 0 1rem rgba(255, 255, 255, 0.75);
+	aspect-ratio: 3 / 2;
+	border: 4px solid;
+	background-color: $photoColor;
+	position: relative;
+	transition: .15s ease;
+	cursor: pointer;
+	padding: 5% 5% 15% 5%;
+	&:before, &:after {
+        //box-shadow: 0 0 1rem rgba(255, 255, 255, 0.75);
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border: 4px solid;
+		background-color: $photoColor;
+		transform-origin: center center;
+		z-index: -1;
+		transition: .15s ease;
+		top: 0;
+		left: 0;
+	}
+	
+	&:before {
+		transform: translatey(-2%) rotate(-6deg);
+	}
+	
+	&:after {
+		transform: translatey(2%) rotate(6deg);
+	}
+	
+
+	
+}
+.stack__image-container {
+		width: 100%;
+		border: 4px solid white;
+		background-color: $photoColor;
+		aspect-ratio: 1 / 1;
+		position: relative;
+        overflow: hidden;
+	}

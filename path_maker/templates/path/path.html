@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Name of the place{% endblock title %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'styles/path/style.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock extrahead %}
+{% block content %}
+{% for place in places %}
+    {% if forloop.counter|divisibleby:2 %}
+        {% include "path/components/place_left.html" with image_url=place.image_url title=place.name description=place.description %}
+    {% else %}
+        {% include "path/components/place_right.html" with image_url=place.image_url title=place.name description=place.description %}
+    {% endif %}
+{% endfor %}
+    {% include "path/components/rating.html" %}
+    <form action="{% url 'path:download_pdf' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="button button-center">Download</button>
+    </form>
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}

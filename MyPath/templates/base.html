@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My site{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'styles/base/style.css' %}">
+    {% block extrahead %}{% endblock extrahead %}
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo-link">
+            <img src="{% static '/images/Imagotipo-letras-blancas.png' %}" alt="Logo" class="header__logo">
+        </a>
+        <nav class="header__nav-bar">
+            <a href="" class="header__nav-bar-link header__nav-bar-link--special">Get Started</a>
+            <a href="" class ="header__nav-bar-link">Account</a>
+            <a href="" class ="header__nav-bar-link">Settings</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer></footer>
+    {% block extrajs %}{% endblock extrajs %}
+</body>
+</html>

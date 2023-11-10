@@ -1,0 +1,738 @@
+@charset "UTF-8";
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex-direction: column;
+}
+
+.slogan__text {
+  display: block;
+  margin: auto;
+  color: #F2F2F2;
+  font-size: 5rem;
+}
+.slogan__text::before {
+  content: "​";
+  content: "​"/"Let your preferences guide your adventure";
+  alt: "Let your preferences guide your adventure";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 10.38s linear 1s 0 forwards, typed-0-final 4.1s linear 1s 1 forwards;
+}
+@keyframes typed-0-final {
+  0%, 2.4390243902% {
+    content: "​L";
+    content: "​L"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  2.4400243902%, 4.8780487805% {
+    content: "​Le";
+    content: "​Le"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  4.8790487805%, 7.3170731707% {
+    content: "​Let";
+    content: "​Let"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  7.3180731707%, 9.756097561% {
+    content: "​Let ";
+    content: "​Let "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  9.757097561%, 12.1951219512% {
+    content: "​Let y";
+    content: "​Let y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  12.1961219512%, 14.6341463415% {
+    content: "​Let yo";
+    content: "​Let yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  14.6351463415%, 17.0731707317% {
+    content: "​Let you";
+    content: "​Let you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  17.0741707317%, 19.512195122% {
+    content: "​Let your";
+    content: "​Let your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  19.513195122%, 21.9512195122% {
+    content: "​Let your ";
+    content: "​Let your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  21.9522195122%, 24.3902439024% {
+    content: "​Let your p";
+    content: "​Let your p"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  24.3912439024%, 26.8292682927% {
+    content: "​Let your pr";
+    content: "​Let your pr"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  26.8302682927%, 29.2682926829% {
+    content: "​Let your pre";
+    content: "​Let your pre"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  29.2692926829%, 31.7073170732% {
+    content: "​Let your pref";
+    content: "​Let your pref"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  31.7083170732%, 34.1463414634% {
+    content: "​Let your prefe";
+    content: "​Let your prefe"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  34.1473414634%, 36.5853658537% {
+    content: "​Let your prefer";
+    content: "​Let your prefer"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  36.5863658537%, 39.0243902439% {
+    content: "​Let your prefere";
+    content: "​Let your prefere"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  39.0253902439%, 41.4634146341% {
+    content: "​Let your preferen";
+    content: "​Let your preferen"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  41.4644146341%, 43.9024390244% {
+    content: "​Let your preferenc";
+    content: "​Let your preferenc"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  43.9034390244%, 46.3414634146% {
+    content: "​Let your preference";
+    content: "​Let your preference"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  46.3424634146%, 48.7804878049% {
+    content: "​Let your preferences";
+    content: "​Let your preferences"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  48.7814878049%, 51.2195121951% {
+    content: "​Let your preferences ";
+    content: "​Let your preferences "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  51.2205121951%, 53.6585365854% {
+    content: "​Let your preferences g";
+    content: "​Let your preferences g"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  53.6595365854%, 56.0975609756% {
+    content: "​Let your preferences gu";
+    content: "​Let your preferences gu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  56.0985609756%, 58.5365853659% {
+    content: "​Let your preferences gui";
+    content: "​Let your preferences gui"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  58.5375853659%, 60.9756097561% {
+    content: "​Let your preferences guid";
+    content: "​Let your preferences guid"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  60.9766097561%, 63.4146341463% {
+    content: "​Let your preferences guide";
+    content: "​Let your preferences guide"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  63.4156341463%, 65.8536585366% {
+    content: "​Let your preferences guide ";
+    content: "​Let your preferences guide "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  65.8546585366%, 68.2926829268% {
+    content: "​Let your preferences guide y";
+    content: "​Let your preferences guide y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  68.2936829268%, 70.7317073171% {
+    content: "​Let your preferences guide yo";
+    content: "​Let your preferences guide yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  70.7327073171%, 73.1707317073% {
+    content: "​Let your preferences guide you";
+    content: "​Let your preferences guide you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  73.1717317073%, 75.6097560976% {
+    content: "​Let your preferences guide your";
+    content: "​Let your preferences guide your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  75.6107560976%, 78.0487804878% {
+    content: "​Let your preferences guide your ";
+    content: "​Let your preferences guide your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  78.0497804878%, 80.487804878% {
+    content: "​Let your preferences guide your a";
+    content: "​Let your preferences guide your a"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  80.488804878%, 82.9268292683% {
+    content: "​Let your preferences guide your ad";
+    content: "​Let your preferences guide your ad"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  82.9278292683%, 85.3658536585% {
+    content: "​Let your preferences guide your adv";
+    content: "​Let your preferences guide your adv"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  85.3668536585%, 87.8048780488% {
+    content: "​Let your preferences guide your adve";
+    content: "​Let your preferences guide your adve"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  87.8058780488%, 90.243902439% {
+    content: "​Let your preferences guide your adven";
+    content: "​Let your preferences guide your adven"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  90.244902439%, 92.6829268293% {
+    content: "​Let your preferences guide your advent";
+    content: "​Let your preferences guide your advent"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  92.6839268293%, 95.1219512195% {
+    content: "​Let your preferences guide your adventu";
+    content: "​Let your preferences guide your adventu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  95.1229512195%, 97.5609756098% {
+    content: "​Let your preferences guide your adventur";
+    content: "​Let your preferences guide your adventur"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  97.5619756098%, 100% {
+    content: "​Let your preferences guide your adventure";
+    content: "​Let your preferences guide your adventure"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+}
+.slogan__text::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 10px solid currentColor;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@keyframes typed-0 {
+  0%, 0.9623911368% {
+    content: "​L";
+    content: "​L"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  0.9633911368%, 1.9257822736% {
+    content: "​Le";
+    content: "​Le"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  1.9267822736%, 2.8891734104% {
+    content: "​Let";
+    content: "​Let"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  2.8901734104%, 3.8525645472% {
+    content: "​Let ";
+    content: "​Let "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  3.8535645472%, 4.815955684% {
+    content: "​Let y";
+    content: "​Let y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  4.816955684%, 5.7793468208% {
+    content: "​Let yo";
+    content: "​Let yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  5.7803468208%, 6.7427379576% {
+    content: "​Let you";
+    content: "​Let you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  6.7437379576%, 7.7061290944% {
+    content: "​Let your";
+    content: "​Let your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  7.7071290944%, 8.6695202312% {
+    content: "​Let your ";
+    content: "​Let your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  8.6705202312%, 9.632911368% {
+    content: "​Let your p";
+    content: "​Let your p"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  9.633911368%, 10.5963025048% {
+    content: "​Let your pr";
+    content: "​Let your pr"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  10.5973025048%, 11.5596936416% {
+    content: "​Let your pre";
+    content: "​Let your pre"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  11.5606936416%, 12.5230847784% {
+    content: "​Let your pref";
+    content: "​Let your pref"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  12.5240847784%, 13.4864759152% {
+    content: "​Let your prefe";
+    content: "​Let your prefe"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  13.4874759152%, 14.449867052% {
+    content: "​Let your prefer";
+    content: "​Let your prefer"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  14.450867052%, 15.4132581888% {
+    content: "​Let your prefere";
+    content: "​Let your prefere"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  15.4142581888%, 16.3766493256% {
+    content: "​Let your preferen";
+    content: "​Let your preferen"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  16.3776493256%, 17.3400404624% {
+    content: "​Let your preferenc";
+    content: "​Let your preferenc"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  17.3410404624%, 18.3034315992% {
+    content: "​Let your preference";
+    content: "​Let your preference"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  18.3044315992%, 19.266822736% {
+    content: "​Let your preferences";
+    content: "​Let your preferences"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  19.267822736%, 20.2302138728% {
+    content: "​Let your preferences ";
+    content: "​Let your preferences "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  20.2312138728%, 21.1936050096% {
+    content: "​Let your preferences g";
+    content: "​Let your preferences g"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  21.1946050096%, 22.1569961464% {
+    content: "​Let your preferences gu";
+    content: "​Let your preferences gu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  22.1579961464%, 23.1203872832% {
+    content: "​Let your preferences gui";
+    content: "​Let your preferences gui"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  23.1213872832%, 24.08377842% {
+    content: "​Let your preferences guid";
+    content: "​Let your preferences guid"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  24.08477842%, 25.0471695568% {
+    content: "​Let your preferences guide";
+    content: "​Let your preferences guide"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  25.0481695568%, 26.0105606936% {
+    content: "​Let your preferences guide ";
+    content: "​Let your preferences guide "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  26.0115606936%, 26.9739518304% {
+    content: "​Let your preferences guide y";
+    content: "​Let your preferences guide y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  26.9749518304%, 27.9373429672% {
+    content: "​Let your preferences guide yo";
+    content: "​Let your preferences guide yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  27.9383429672%, 28.900734104% {
+    content: "​Let your preferences guide you";
+    content: "​Let your preferences guide you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  28.901734104%, 29.8641252408% {
+    content: "​Let your preferences guide your";
+    content: "​Let your preferences guide your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  29.8651252408%, 30.8275163776% {
+    content: "​Let your preferences guide your ";
+    content: "​Let your preferences guide your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  30.8285163776%, 31.7909075145% {
+    content: "​Let your preferences guide your a";
+    content: "​Let your preferences guide your a"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  31.7919075145%, 32.7542986513% {
+    content: "​Let your preferences guide your ad";
+    content: "​Let your preferences guide your ad"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  32.7552986513%, 33.7176897881% {
+    content: "​Let your preferences guide your adv";
+    content: "​Let your preferences guide your adv"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  33.7186897881%, 34.6810809249% {
+    content: "​Let your preferences guide your adve";
+    content: "​Let your preferences guide your adve"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  34.6820809249%, 35.6444720617% {
+    content: "​Let your preferences guide your adven";
+    content: "​Let your preferences guide your adven"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  35.6454720617%, 36.6078631985% {
+    content: "​Let your preferences guide your advent";
+    content: "​Let your preferences guide your advent"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  36.6088631985%, 37.5712543353% {
+    content: "​Let your preferences guide your adventu";
+    content: "​Let your preferences guide your adventu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  37.5722543353%, 38.5346454721% {
+    content: "​Let your preferences guide your adventur";
+    content: "​Let your preferences guide your adventur"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  38.5356454721%, 59.5365722543% {
+    content: "​Let your preferences guide your adventure";
+    content: "​Let your preferences guide your adventure"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  59.5375722543%, 60.3072851638% {
+    content: "​Let your preferences guide your adventur";
+    content: "​Let your preferences guide your adventur"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  60.3082851638%, 61.0779980732% {
+    content: "​Let your preferences guide your adventu";
+    content: "​Let your preferences guide your adventu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  61.0789980732%, 61.8487109827% {
+    content: "​Let your preferences guide your advent";
+    content: "​Let your preferences guide your advent"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  61.8497109827%, 62.6194238921% {
+    content: "​Let your preferences guide your adven";
+    content: "​Let your preferences guide your adven"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  62.6204238921%, 63.3901368015% {
+    content: "​Let your preferences guide your adve";
+    content: "​Let your preferences guide your adve"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  63.3911368015%, 64.160849711% {
+    content: "​Let your preferences guide your adv";
+    content: "​Let your preferences guide your adv"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  64.161849711%, 64.9315626204% {
+    content: "​Let your preferences guide your ad";
+    content: "​Let your preferences guide your ad"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  64.9325626204%, 65.7022755299% {
+    content: "​Let your preferences guide your a";
+    content: "​Let your preferences guide your a"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  65.7032755299%, 66.4729884393% {
+    content: "​Let your preferences guide your ";
+    content: "​Let your preferences guide your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  66.4739884393%, 67.2437013487% {
+    content: "​Let your preferences guide your";
+    content: "​Let your preferences guide your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  67.2447013487%, 68.0144142582% {
+    content: "​Let your preferences guide you";
+    content: "​Let your preferences guide you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  68.0154142582%, 68.7851271676% {
+    content: "​Let your preferences guide yo";
+    content: "​Let your preferences guide yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  68.7861271676%, 69.5558400771% {
+    content: "​Let your preferences guide y";
+    content: "​Let your preferences guide y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  69.5568400771%, 70.3265529865% {
+    content: "​Let your preferences guide ";
+    content: "​Let your preferences guide "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  70.3275529865%, 71.097265896% {
+    content: "​Let your preferences guide";
+    content: "​Let your preferences guide"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  71.098265896%, 71.8679788054% {
+    content: "​Let your preferences guid";
+    content: "​Let your preferences guid"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  71.8689788054%, 72.6386917148% {
+    content: "​Let your preferences gui";
+    content: "​Let your preferences gui"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  72.6396917148%, 73.4094046243% {
+    content: "​Let your preferences gu";
+    content: "​Let your preferences gu"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  73.4104046243%, 74.1801175337% {
+    content: "​Let your preferences g";
+    content: "​Let your preferences g"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  74.1811175337%, 74.9508304432% {
+    content: "​Let your preferences ";
+    content: "​Let your preferences "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  74.9518304432%, 75.7215433526% {
+    content: "​Let your preferences";
+    content: "​Let your preferences"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  75.7225433526%, 76.492256262% {
+    content: "​Let your preference";
+    content: "​Let your preference"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  76.493256262%, 77.2629691715% {
+    content: "​Let your preferenc";
+    content: "​Let your preferenc"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  77.2639691715%, 78.0336820809% {
+    content: "​Let your preferen";
+    content: "​Let your preferen"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  78.0346820809%, 78.8043949904% {
+    content: "​Let your prefere";
+    content: "​Let your prefere"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  78.8053949904%, 79.5751078998% {
+    content: "​Let your prefer";
+    content: "​Let your prefer"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  79.5761078998%, 80.3458208092% {
+    content: "​Let your prefe";
+    content: "​Let your prefe"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  80.3468208092%, 81.1165337187% {
+    content: "​Let your pref";
+    content: "​Let your pref"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  81.1175337187%, 81.8872466281% {
+    content: "​Let your pre";
+    content: "​Let your pre"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  81.8882466281%, 82.6579595376% {
+    content: "​Let your pr";
+    content: "​Let your pr"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  82.6589595376%, 83.428672447% {
+    content: "​Let your p";
+    content: "​Let your p"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  83.429672447%, 84.1993853565% {
+    content: "​Let your ";
+    content: "​Let your "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  84.2003853565%, 84.9700982659% {
+    content: "​Let your";
+    content: "​Let your"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  84.9710982659%, 85.7408111753% {
+    content: "​Let you";
+    content: "​Let you"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  85.7418111753%, 86.5115240848% {
+    content: "​Let yo";
+    content: "​Let yo"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  86.5125240848%, 87.2822369942% {
+    content: "​Let y";
+    content: "​Let y"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  87.2832369942%, 88.0529499037% {
+    content: "​Let ";
+    content: "​Let "/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  88.0539499037%, 88.8236628131% {
+    content: "​Let";
+    content: "​Let"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  88.8246628131%, 89.5943757225% {
+    content: "​Le";
+    content: "​Le"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  89.5953757225%, 90.365088632% {
+    content: "​L";
+    content: "​L"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+  90.366088632%, 100% {
+    content: "​";
+    content: "​"/"Let your preferences guide your adventure";
+    alt: "Let your preferences guide your adventure";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+
+.prompt-form {
+  margin-top: 2rem;
+}
+.prompt-form__button {
+  border: none;
+  cursor: pointer;
+  background: white;
+  border-radius: 50px;
+  aspect-ratio: 1;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 5px;
+}
+.prompt-form__button:hover {
+  opacity: 0.8;
+}
+.prompt-form__input {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 2rem 2rem;
+  width: 100%;
+}
+.prompt-form__input:focus {
+  outline: 2px solid white;
+}
+
+.wrapper {
+  width: 700px;
+  max-width: 100%;
+  position: relative;
+}
+
+.hypnotic {
+  width: 56px;
+  height: 56px;
+  border: 2.2px solid #474bff;
+  display: grid;
+  animation: hypnotic-q3fddx 4s infinite linear;
+}
+
+.hypnotic::before,
+.hypnotic::after {
+  content: "";
+  grid-area: 1/1;
+  margin: auto;
+  width: 70.7%;
+  height: 70.7%;
+  border: 2.2px solid #474bff;
+  animation: inherit;
+}
+
+.hypnotic::after {
+  width: 50%;
+  height: 50%;
+  border: 2.2px solid #474bff;
+  animation-duration: 2s;
+}
+
+@keyframes hypnotic-q3fddx {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}MyPath: Your preferences, your path{% endblock title %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'styles/home/style.css' %}">
+{% endblock extrahead %}
+{% block content %}
+<div class="welcome-section">
+    <div class="slogan">
+        <span class="slogan__text"></span>
+    </div>
+    <form action="{% url 'path:path' %}" method="post" class="prompt-form">
+        {% csrf_token %}
+        <div class="wrapper">
+            <input type="text" name="promptSpace" class="prompt-form__input" minlength="1" placeholder="I'm in California, love nature and adventure. Any nearby places with hiking trails and breathtaking views?" required/>
+            <button type="submit" class="prompt-form__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M13 18l6 -6"></path>
+                    <path d="M13 6l6 6"></path>
+                </svg>
+            </button>
+        </div>
+    </form>
+    {% if messages %}
+    {% for message in messages %}
+      {% if message.tags == 'error' %}
+        <!-- Solo muestra el mensaje de error -->
+        <div class="alert alert--danger">
+          {{ message }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  
+
+</div>
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}
