@@ -32,3 +32,6 @@ def download_pdf(request):
 
 def login(request):
     return render(request, 'path/login.html')
+
+def sign_up(request):
+    return render(request, 'path/sign_up.html')

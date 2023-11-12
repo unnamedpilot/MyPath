@@ -16,8 +16,8 @@
         </a>
         <nav class="header__nav-bar">
             <a href="" class="header__nav-bar-link header__nav-bar-link--special">Get Started</a>
-            <a href="" class ="header__nav-bar-link">Account</a>
-            <a href="" class ="header__nav-bar-link">Settings</a>
+            <a href="{% url 'path:login' %}" class ="header__nav-bar-link">Login</a>
+            <a href="{% url 'path:sign_up' %}" class ="header__nav-bar-link">Sign up</a>
         </nav>
     </header>
 {% endblock header %}
