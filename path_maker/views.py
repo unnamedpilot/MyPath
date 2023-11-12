@@ -29,3 +29,6 @@ def download_pdf(request):
     response['Content-Disposition'] = 'attachment; filename="informacion.pdf"'
     del request.session['places']
     return response
+
+def login(request):
+    return render(request, 'path/login.html')

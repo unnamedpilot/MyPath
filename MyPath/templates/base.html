@@ -9,6 +9,7 @@
     {% block extrahead %}{% endblock extrahead %}
 </head>
 <body>
+{% block header %}
     <header class="header">
         <a href="#" class="header__logo-link">
             <img src="{% static '/images/Imagotipo-letras-blancas.png' %}" alt="Logo" class="header__logo">
@@ -19,6 +20,8 @@
             <a href="" class ="header__nav-bar-link">Settings</a>
         </nav>
     </header>
+{% endblock header %}
+    
     <main>
         {% block content %}
         {% endblock content %}
