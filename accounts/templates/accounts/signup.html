@@ -1,4 +1,6 @@
+
 {% extends "base.html" %}
+{% load widget_tweaks %}
 {% load static %}
 {% block title %}Sign up{% endblock title %}
 {% block extrahead %}
@@ -13,30 +15,43 @@
     <div class="signin">
     <div class="signin__content">
         <h2 class="signin__title">Sign up</h2>
-        <form class="form">
-        <div class="form__input-box">
-            <input type="text" required class="form__input" />
-            <i class="form__icon">Username</i>
-        </div>
-
-        <div class="form__input-box">
-            <input type="text" required class="form__input" />
-            <i class="form__icon">Email</i>
-        </div>
-
-        <div class="form__input-box">
-            <input type="password" required class="form__input" />
-            <i class="form__icon">Password</i>
-        </div>
-
-        <div class="form__links">
-            <a href="{% url 'path:login' %}" class="form__link form__link--signup">Sign in</a>
-        </div>
-
-        <div class="form__input-box">
-            <input type="submit" value="Login" class="form__submit" />
-        </div>
-        </form>
+        <form class="form" method="post">
+            {% csrf_token %}
+        
+            {# Renderiza el campo username #}
+            <div class="form__input-box">
+              {% render_field form.username|add_class:"form__input" type="text" required="required" minlength="4" %}
+              <i class="form__icon">Username</i>
+            </div>
+        
+            {# Renderiza el campo email. Asumiendo que lo has agregado al formulario #}
+            <div class="form__input-box">
+              {% render_field form.email|add_class:"form__input" type="text" required="required" %}
+              <i class="form__icon">Email</i>
+            </div>
+        
+            {# Renderiza el campo password #}
+            <div class="form__input-box">
+              {% render_field form.password1|add_class:"form__input" type="password" required="required" minlength="8" %}
+              <i class="form__icon">Password</i>
+            </div>
+        
+            {# Renderiza la confirmación de password si la tienes #}
+            <div class="form__input-box">
+              {% render_field form.password2|add_class:"form__input" type="password" required="required" minlength="8" %}
+              <i class="form__icon">Confirm Password</i>
+            </div>
+        
+            {# Enlace para ir a la vista de inicio de sesión #}
+            <div class="form__links">
+              <a href="{% url 'accounts:login' %}" class="form__link form__link--signup">Sign in</a>
+            </div>
+        
+            {# Botón de envío #}
+            <div class="form__input-box">
+              <input type="submit" value="Sign up" class="form__submit" />
+            </div>
+          </form>
     </div>
     </div>
 </section>

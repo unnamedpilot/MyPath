@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from .utils.GPT import get_completion_automatic_format
 from .utils.image import get_image_for_place
-from django.http import HttpResponse
 from .utils.pdf_utils import generate_pdf
+from django.http import HttpResponse
 from django.contrib import messages
 
 def home(request):
@@ -30,8 +30,4 @@ def download_pdf(request):
     del request.session['places']
     return response
 
-def login(request):
-    return render(request, 'path/login.html')
 
-def sign_up(request):
-    return render(request, 'path/sign_up.html')
