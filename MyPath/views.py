@@ -2,7 +2,9 @@ import openai
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponseBadRequest
 
-openai.api_key = ''
+from destino import models as destino_models
+
+openai.api_key = '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'
 
 def get_completion(messages, model="gpt-3.5-turbo"):
     response = openai.ChatCompletion.create(
@@ -44,3 +46,15 @@ def chat_gpt_api(request):
         return render(request,'path.html',{'respuesta': respuesta_de_chat_gpt})
 
     return HttpResponseBadRequest("Manda otra cosa")
+
+def agregar_ruta(request):
+    if request.method == 'POST':
+        respuesta = request.POST.get('contenido','')
+        
+        # Guardar la ruta en la base de datos (suponiendo que tienes un modelo MyRoutes)
+        myroute = destino_models.MyRoutes(description=respuesta)
+        myroute.save()
+
+        return render(request,'path.html',{'respuesta': respuesta})
+
+    return JsonResponse({'mensaje': 'Error en la solicitud.'}, status=400)

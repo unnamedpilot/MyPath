@@ -7,4 +7,6 @@ class destino (models.Model):
     description = models.CharField(max_length=250)
     image = models.ImageField(upload_to='destino/images/')
     coordinates = models.CharField(max_length=50)
-    
+
+class MyRoutes(models.Model):
+    description = models.CharField(max_length=100000)

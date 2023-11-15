@@ -1,11 +1,15 @@
-{% load static %}
+<!-- En tu archivo listar_rutas.html dentro de la carpeta templates -->
+{% extends 'base.html' %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'estilos.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My path</title>
+    <title>My path</title>
 </head>
 <body>
     <header>
@@ -26,7 +30,7 @@
     </main>
 
     <div class="container">
-            {% for destino in destinos %}
+        {% for destino in destinos %}
             <div v-for="destino in destinos" class="col">
                 <div class="card">
                     <img class="card-img-top" src="{{ destino.image.url }}" />
@@ -36,12 +40,12 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        </div>
-        <br />
-        <br />
+        {% endfor %}
     </div>
+    <br />
+    <br />
 
     <script src="{% static 'mi-archivo.js' %}"></script>
 </body>
 </html>
+{% endblock %}

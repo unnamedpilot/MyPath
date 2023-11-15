@@ -18,14 +18,18 @@ from django.contrib import admin
 from django.urls import path
 from destino import views as vistaDestino
 from . import views
+from django.urls import path, include
 
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',vistaDestino.home),
+    path('',vistaDestino.home, name='home'),
     path('api/chat-gpt/', views.chat_gpt_api, name='chat_gpt_api'),
+    path('routes/', vistaDestino.Mypaths , name='routes'),
+    path('agregar_ruta/', views.agregar_ruta, name='agregar_ruta')
 ]
 
 

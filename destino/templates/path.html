@@ -1,5 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Respuesta de ChatGPT</title>
@@ -127,6 +131,16 @@
         <button onclick="agradecer()">Enviar Calificación</button>
         <button onclick="downloadPDF()">Descargar PDF</button>
 
+        <form action="{% url 'agregar_ruta' %}" method="post" id="mi-formulario">
+            {% csrf_token %}
+            <input type="hidden" name="contenido" value="{{ respuesta }}">
+            <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" id="btn-agregar-favoritos" onclick="agregarFavoritos()">
+                    Agregar a favoritos
+                </button>
+        </form>
+        
+
     </div>
 
     <script>
@@ -155,8 +169,16 @@
 
 
             pdf.save('TuRuta_mypath.pdf');
-        }      
+        }
+            // Función para deshabilitar el botón después de hacer clic
+    function agregarFavoritos() {
+        const btnAgregarFavoritos = document.getElementById('btn-agregar-favoritos');
+        btnAgregarFavoritos.disabled = true;
+        btnAgregarFavoritos.innerHTML = '<i class="fas fa-heart"></i> Agregado a favoritos';
+    }
 
     </script>
 </body>
 </html>
+{% endblock %}
+```

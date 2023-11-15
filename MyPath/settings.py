@@ -27,7 +27,7 @@ MEDIA_URL='/media/'
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'r*1nffrxp!5n8vi^ah-s!_k2j1y0w!saw$lk4$o@3-6x%jh*-8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'destino'
+    'destino',
 ]
 
 MIDDLEWARE = [
