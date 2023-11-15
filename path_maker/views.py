@@ -11,7 +11,7 @@ def home(request):
 def path_maker(request):
     dato = request.POST.get('promptSpace')
     places_without_image = get_completion_automatic_format(dato)
-    if len(places_without_image) > 0:
+    if places_without_image and len(places_without_image) > 0:
         settlement_position = len(places_without_image)-1
         settlement = places_without_image.pop(settlement_position)
         places = get_image_for_place(places_without_image, settlement)

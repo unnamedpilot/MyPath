@@ -4,8 +4,144 @@
 {% block extrahead %}
 <link rel="stylesheet" href="{% static 'styles/path/style.css' %}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+
+    .welcome-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      flex-direction: column;
+    }
+  
+    .slogan__text {
+      display: block;
+      margin: auto;
+      color: #F2F2F2;
+      font-size: 5rem;
+      /* Include your typed styles here */
+    }
+  
+    .prompt-form {
+      margin-top: 2rem;
+    }
+  
+    .prompt-form__button {
+      border: none;
+      cursor: pointer;
+      background: white;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      height: 80%;
+      position: absolute;
+      top: 10%;
+      right: 5px;
+      transition: opacity 0.3s;
+  
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  
+    .prompt-form__input {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 2rem;
+      width: 100%;
+  
+      &:focus {
+        outline: 2px solid white;
+      }
+    }
+  
+    .wrapper {
+      width: 700px;
+      max-width: 100%;
+      position: relative;
+    }
+  
+    .hypnotic {
+      width: 56px;
+      height: 56px;
+      border: 2.2px solid #474bff;
+      display: grid;
+      animation: hypnotic-q3fddx 4s infinite linear;
+  
+      &::before,
+      &::after {
+        content: "";
+        grid-area: 1/1;
+        margin: auto;
+        width: 70.7%;
+        height: 70.7%;
+        border: 2.2px solid #474bff;
+        animation: inherit;
+      }
+  
+      &::after {
+        width: 50%;
+        height: 50%;
+        border: 2.2px solid #474bff;
+        animation-duration: 2s;
+      }
+    }
+  
+    @keyframes hypnotic-q3fddx {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+  
+    .loading-screen {
+      /* ... (styles for loading screen) */
+    }
+  
+    .alert--danger {
+      /* ... (styles for danger alert) */
+    }
+    .wrapper {
+  width: 700px;
+  max-width: 100%;
+  position: relative;
+  margin: auto; /* Agrega esta línea para centrar el contenedor */
+}
+
+  </style>
 {% endblock extrahead %}
 {% block content %}
+<div class="text-center"> <!-- Agregamos un contenedor y la clase text-center para centrar -->
+    <form action="{% url 'path:path' %}" method="post" class="prompt-form">
+        {% csrf_token %}
+        <div class="wrapper">
+            <input type="text" name="promptSpace" class="prompt-form__input" minlength="1" placeholder="I'm in California, love nature and adventure. Any nearby places with hiking trails and breathtaking views?" required/>
+            <button type="submit" class="prompt-form__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M13 18l6 -6"></path>
+                    <path d="M13 6l6 6"></path>
+                </svg>
+            </button>
+        </div>
+    </form>
+</div>
+{% if messages %}
+    {% for message in messages %}
+        {% if message.tags == 'error' %}
+            <!-- Solo muestra el mensaje de error -->
+            <div class="alert alert--danger">
+            {{ message }}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
 {% for place in places %}
     {% if forloop.counter|divisibleby:2 %}
         {% include "path/components/place_left.html" with image_url=place.image_url title=place.name description=place.description %}
@@ -13,10 +149,10 @@
         {% include "path/components/place_right.html" with image_url=place.image_url title=place.name description=place.description %}
     {% endif %}
 {% endfor %}
-    {% include "path/components/rating.html" %}
-    <form action="{% url 'path:download_pdf' %}" method="post">
-        {% csrf_token %}
-        <button type="submit" class="button button-center">Download</button>
-    </form>
+{% include "path/components/rating.html" %}
+<form action="{% url 'path:download_pdf' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="button button-center">Download</button>
+</form>
 {% endblock content %}
 {% block extrajs %}{% endblock extrajs %}
