@@ -18,5 +18,24 @@
         {% csrf_token %}
         <button type="submit" class="button button-center">Download</button>
     </form>
+    <form action="{% url 'path:mypaths' %}" method="post" id="mi-formulario">
+        {% csrf_token %}
+        <input type="hidden" name="contenido" value="{{ place }}">
+        <button type="submit" class="btn btn-primary">
+            <button type="submit" class="button button-center" id="btn-agregar-favoritos" onclick="agregarFavoritos()">
+                Add to favorites
+            </button>
+    </form>
+
+<script>
+
+    function agregarFavoritos() {
+        const btnAgregarFavoritos = document.getElementById('btn-agregar-favoritos');
+        btnAgregarFavoritos.disabled = true;
+        btnAgregarFavoritos.innerHTML = '<i class="fas fa-heart"></i> Added to favorites';
+    }
+
+</script>
+
 {% endblock content %}
 {% block extrajs %}{% endblock extrajs %}

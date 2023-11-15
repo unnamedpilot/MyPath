@@ -18,6 +18,7 @@
             <a href="" class="header__nav-bar-link header__nav-bar-link--special">Get Started</a>
             {% if user.is_authenticated %}
             <a href="#" class ="header__nav-bar-link">{{user.username}}</a>
+            <a href="{% url 'path:mypaths' %}" class ="header__nav-bar-link">My Routes</a>
             <a href="{% url 'accounts:logout' %}" class ="header__nav-bar-link">Log out</a>
             {% else %}
             <a href="{% url 'accounts:login' %}" class ="header__nav-bar-link">Login</a>

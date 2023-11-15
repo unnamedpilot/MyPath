@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.home, name = 'home'),
     path('path/', views.path_maker, name = 'path'),
     path('download_pdf/', views.download_pdf, name='download_pdf'),
-
+    path('mypaths/', views.Mypaths, name='mypaths'),
 ]

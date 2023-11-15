@@ -4,6 +4,9 @@ from django.contrib import messages
 from .forms import CustomUserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 
+from django.http import JsonResponse
+from . import models as destino_models
+
 
 def sign_up(request):
     if request.method == 'POST':
